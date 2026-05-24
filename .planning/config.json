@@ -1,0 +1,35 @@
+{
+  "mode": "interactive",
+  "granularity": "standard",
+  "parallelization": {
+    "enabled": true,
+    "plan_level": true,
+    "task_level": false,
+    "max_concurrent_agents": 3
+  },
+  "model_profile": "balanced",
+  "runtime": "opencode",
+  "workflow": {
+    "research": true,
+    "plan_check": true,
+    "verifier": true,
+    "nyquist_validation": true,
+    "auto_advance": false
+  },
+  "ship": {
+    "pr_body_sections": []
+  },
+  "project_mode": "standard",
+  "planning": {
+    "sub_repos": [],
+    "commit_docs": true
+  },
+  "git": {
+    "branching_strategy": "milestone",
+    "milestone_branch_template": "gsd/{milestone}--{slug}"
+  },
+  "safety": {
+    "always_confirm_destructive": true,
+    "always_confirm_external_services": true
+  }
+}

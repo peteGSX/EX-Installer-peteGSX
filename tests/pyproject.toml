@@ -5,3 +5,13 @@ python_files = "test_*.py"
 python_classes = "Test*"
 python_functions = "test_*"
 addopts = "-v --cov=tests --cov-report=term-missing"
+
+[tool.coverage.run]
+source = ["."]
+branch = true
+omit = ["*/conftest.py"]
+
+[tool.coverage.report]
+exclude_lines = ["pragma: no cover", "def __repr__", "raise NotImplementedError"]
+precision = 2
+

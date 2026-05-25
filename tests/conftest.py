@@ -1,6 +1,6 @@
 """Pytest configuration and fixtures for test infrastructure."""
 
-
+import pytest
 
 # ============================================================================
 # Mock Arduino Devices
